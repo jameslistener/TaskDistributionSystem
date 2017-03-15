@@ -34,13 +34,12 @@
 		<div id="filterlist">
 		</div>
 		<?php 
-				$project_id = $GET['id'];
 				mysql_connect('localhost','root','') or die('Error '.mysql_error());
 				mysql_select_db('katya_mosin_dasha') or die('Error '.mysql_error());
 
 		        /*$result = mysql_query('SELECT * from projects') or die('Error '.mysql_error());
 				for($projects=array(); $project=mysql_fetch_assoc($result); $projects[]=$project);*/
-				$result = mysql_query('SELECT projects.moniker, users.user_id, users.name,users.surname,projects.description, projects.killline,projects.meaning, projects.project_id FROM projects JOIN users WHERE projects.warlord = users.user_id ') or die('Error '.mysql_error());
+				$result = mysql_query('SELECT projects.moniker, users.user_id, users.name,users.surname,projects.description, projects.killline, projects.meaning, projects.project_id FROM projects JOIN users WHERE projects.warlord = users.user_id ') or die('Error '.mysql_error());
 				for($projects=array();$project=mysql_fetch_assoc($result); $projects[]=$project);
 				for ($i=0;$i<count($projects);$i++)
 			{
