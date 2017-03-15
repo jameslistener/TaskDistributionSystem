@@ -97,13 +97,13 @@ body {
 }
 .tasks{
 	margin-left: 70px;
-	width: 93%;
-	height: 69px;
-	background-color: blue;
+	width: 91%;
+	height: 59px;
+	/*background-color: blue;*/
 	border: 4px solid #999;
-
+	padding: 10px;
 	border-radius: 35px;
-	margin-bottom: 15px;
+	margin-bottom: -4px;
 
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .tasks div{
-	padding: 2px;
+	padding: 4px;
 }
 
 
@@ -171,7 +171,7 @@ body {
 
 .projectname a{
 	text-decoration: none;
-	color: #A4A2A1
+	color: #888;
 }
 .projectname{
 
