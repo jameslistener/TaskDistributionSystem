@@ -1,0 +1,178 @@
+/*div {
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+}*/
+
+body {
+	margin: 0;
+}
+
+#Head {
+	width: 100%;
+	height: 63px;
+	display: fixed;
+	background-color: red;
+	/*background-image: url(back.jpg);*/
+}
+
+#Logo {
+	width: 69%; 
+	height: 68px;
+	float: left;
+	display: fixed;
+	background-color: yellow;
+}
+
+#authorization {
+	width: 31%;
+	height: 68px;
+	float: left;
+	background-color: blue;
+}
+
+#leftbar {
+	width: 18%;
+	height: 500px;
+	display: fixed;
+	float: left;
+	background-color: green;
+}
+
+#logotip {
+	margin: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#maininfo {
+	float: left;
+	width: 82%;
+	height: 500px;
+	/*background-color: pink;*/
+	display: absolute;
+}
+
+
+
+
+#leftbar a div{
+	border-top: 3px solid black;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	vertical-align: middle;
+	display: flex;
+}
+
+#leftbar a:hover div{
+	background-color: yellow;
+}
+
+#leftbar a{
+	text-decoration: none;
+}
+
+#pole{
+	margin: 0 20px;
+}
+
+#leftbar a div p{
+	color: blue;
+	font-size: 18pt;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+
+
+
+
+#projectview{
+	width: 100%;
+	height: 90px;
+/*	background-color: red;*/
+	padding: 7px;
+}
+.tasks{
+	margin-left: 70px;
+	width: 93%;
+	height: 69px;
+	background-color: blue;
+	border: 4px solid #999;
+
+	border-radius: 35px;
+	margin-bottom: 15px;
+
+}
+
+
+
+.tasks div{
+	font-size: 12pt;
+	font-family: Tahoma;
+}
+
+.tasks div{
+	padding: 2px;
+}
+
+
+
+
+#filterlist{
+	width: 100%;
+	height: 40px;
+/*	background-color: green;*/
+}
+.project{
+
+}
+.leftbar_of_project{
+	float: left;
+	width: 92%;
+/*	background-color: blue;*/
+}
+.status_img{
+	float: left;
+	width: 3%;
+/*	background-color: red;*/
+}
+.chief{
+	width: 46%;
+	float: left;
+/*	background-color: yellow;*/
+}
+.deadline{
+	width: 46%;
+	float: left;
+/*	background-color: gray;*/
+}
+.chief a{
+	text-decoration: none;
+	margin-left: 10px;
+}
+.project div{
+	padding: 5px;
+}
+
+
+
+.project div{
+	font-size: 14pt;
+	font-family: Tahoma;
+}
+#projectview div{
+	font-size: 18pt;
+	font-family: Tahoma;
+}
+
+
+.projectname a{
+	text-decoration: none;
+	color: #A4A2A1
+}
+.projectname{
+
+}
