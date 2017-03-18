@@ -3,7 +3,9 @@
 	border-width: 1px;
 	border-color: red;
 }*/
-
+.closer{
+	clear: both;
+}
 body {
 	margin: 0;
 }
@@ -54,8 +56,6 @@ body {
 }
 
 
-
-
 #leftbar a div{
 	border-top: 3px solid black;
 	width: 100%;
@@ -85,17 +85,19 @@ body {
 	margin: auto;
 }
 
-
-
-
-
 #projectview{
-	width: 100%;
-	height: 90px;
+	width: 95%;
+	min-height: 90px;
 /*	background-color: red;*/
 	padding: 7px;
+	margin: 10px;
 }
-.tasks{
+
+.project_footer {
+	height: 30px;
+}
+
+.task{
 	margin-left: 70px;
 	width: 91%;
 	height: 59px;
@@ -104,22 +106,26 @@ body {
 	padding: 10px;
 	border-radius: 35px;
 	margin-bottom: -4px;
-
 }
 
-
-
-.tasks div{
+.task div{
 	font-size: 12pt;
 	font-family: Tahoma;
 }
 
-.tasks div{
+.task div{
 	padding: 4px;
 }
 
-
-
+.projectname{
+	color: #373737;
+}
+#projectview #description{
+	width: 95%;
+	font-size: 13pt;
+	font-family: Tahoma;
+	padding: 5px;
+}
 
 #filterlist{
 	width: 100%;
@@ -134,9 +140,9 @@ body {
 	width: 92%;
 /*	background-color: blue;*/
 }
-.status_img{
+.status{
 	float: left;
-	width: 3%;
+	width: 5%;
 /*	background-color: red;*/
 }
 .chief{
@@ -156,7 +162,9 @@ body {
 .project div{
 	padding: 5px;
 }
-
+#description{
+	color: #585858;
+}
 
 
 .project div{
