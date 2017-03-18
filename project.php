@@ -40,27 +40,23 @@
 
 		        $zapros = 'SELECT projects.moniker, users.user_id, users.name,users.surname,projects.description, projects.killline,projects.meaning, projects.project_id FROM projects JOIN users WHERE projects.project_id = '.$project_id.' and projects.warlord = users.user_id';
 
-				$result = mysql_query('SELECT projects.moniker, users.user_id, users.name,users.surname,projects.description, projects.killline,projects.meaning, projects.project_id FROM projects JOIN users WHERE projects.project_id = '.$project_id.' and projects.warlord = users.user_id') or die('Error '.mysql_error().'<br>'.$zapros);
+				$result = mysql_query('SELECT projects.moniker, users.user_id, users.name,users.surname,projects.description, projects.killline,projects.meaning, projects.project_id, projects.warlord FROM projects JOIN users WHERE projects.project_id = '.$project_id.' and projects.warlord = users.user_id') or die('Error '.mysql_error().'<br>'.$zapros);
 				$project=mysql_fetch_assoc($result);
 
-				echo '<div class="project">';
-					echo'<div class="leftbar_of_project">';
-					    echo'<div class="projectname">';
-					    	echo '<a href="project.php?id='.$project["project_id"].'">'.$project["moniker"].'</a>';
-					    echo '</div>';
-					    echo '<div class="project_footer">';
-					    	echo '<div class="chief">';
-					    		echo '<a href="user.php?id='.$project['user_id'].'">'.$project["name"].' '.$project["surname"].'</a>';
-					    	echo '</div>';
-					    	echo '<div class="deadline">';
-					    		echo $project["killline"];
-					    	echo '</div>';
-					    echo '</div>';
-					echo '</div>';
-					echo '<div class="status">';
-					    echo $project["meaning"];
-					echo "</div>";
-				echo "</div>";
+				echo '<div id="maininfo">';
+					echo'<div id="projectview"> ';
+					   echo '<div class="leftbar_of_project">';
+					      echo '<div class="projectname">'.$project['moniker'];
+					      echo '</div>';
+				echo '<div class="project_footer">';
+				echo '	<div class="chief"><a href="#">'.$project['warlord'].'</a></div>';
+					echo '<div class="deadline">'.$project['killline'].'</div>';
+				echo '</div>';
+			echo '</div>';
+			echo '<div class="status">'.$project['meaning'].'</div>';
+			echo '</div> ';
+			echo "</div>";
+		echo '</div>'; 
 		?>
 			
 		</div>
