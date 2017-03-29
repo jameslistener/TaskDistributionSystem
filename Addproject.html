@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admenproject</title>
+	<meta charset="utf-8">
+	<link href="styles3.css" rel="stylesheet">
+</head>
+<body>
+	<div id="Head">
+		<div id="Logo">
+			<p id="logotip">DreamTeam</p>
+		</div>
+		<div id="authorization">
+			<form id="pole">
+				Логин: <input type="text" name="login"><br>
+				Пароль: <input type="password" name="pass"><br>
+				Ёкарный бабай, <input type="submit" name="vhod" value="Жми">
+			</form>
+		</div>
+	</div>
+	<div id="leftbar">
+		<a href="#">
+			<div>
+				<p>Список проектов</p>
+			</div>
+		</a>
+		<a href="#">
+			<div>
+				<p>Список пользователей</p>
+			</div>
+		</a>
+	</div>
+	<div id="maininfo">
+		<form>
+			Имя проекта: <input type="text" name="projectname"><br>
+			Описание: <textarea name="description"></textarea><br>
+			Главный ответственный: <select>
+				<option disabled selected>Выберите ответственного</option>
+				<option>Даня</option>
+				<option>Олег</option>
+				<option>Катя</option>
+				<option>Никита</option>
+				<option>Даша</option>
+			</select><br>
+			Дата коллапса: <input type="date" name="deadline"><br>
+			Статус: <select>
+				<option disabled selected>Выберите статус</option>
+				<option>В работе</option>
+				<option>Провалено</option>
+				<option>Выполнено</option>
+			</select><br>
+			<input type="submit" name="addproject" value="Добавить проект"><br>
+		</form>
+	</div>
+</body>
+</html>
