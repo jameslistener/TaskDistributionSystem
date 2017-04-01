@@ -19,12 +19,12 @@
 		</div>
 	</div>
 	<div id="leftbar">
-		<a href="#">
+		<a href="projectlist.php">
 			<div>
 				<p>Список проектов</p>
 			</div>
 		</a>
-		<a href="#">
+		<a href="memberslist.php">
 			<div>
 				<p>Список пользователей</p>
 			</div>
@@ -46,7 +46,7 @@
 					      echo '<div class="projectname">'.$project['moniker'].'</div>';
 					      echo '<div id="description">'.$project['description'].'</div>';					   
 				echo '<div class="project_footer">';
-				echo '	<div class="chief">'.$project['warlord'].'</div>';
+				echo '	<div class="chief"><a href="#">'.$project['warlord'].'</a></div>';
 					echo '<div class="deadline">'.$project['killline'].'</div>';
 					echo '<div class="closer"></div>';
 				echo '</div>';
@@ -60,9 +60,9 @@
 				for ($k=0;$k<count($tasks);$k++)
 				{
 				echo'<div class="task">';
-					echo'<div class="projectname">'.$tasks[$k]['main_name'].'</div>';
+					echo'<div class="projectname"><a href="#">'.$tasks[$k]['main_name'].'</a></div>';
 					echo'<div class="project_footer">';
-					echo'<div class="chief">'.$tasks[$k]['Chief'].'</div>';
+					echo'<div class="chief"><a href="#">'.$tasks[$k]['Chief'].'</a></div>';
 					echo'<div class="deadline">'.$tasks[$k]['deadline'].'</div>';
 					echo'</div>';
 				echo'</div>';
