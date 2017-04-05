@@ -18,13 +18,13 @@
 				</form>
 			</div>
 		</div>
-		<div id="leftbar">
+		<div id="projectlist">
 			<a href="#">
 				<div>
 					<p>Список проектов</p>
 				</div>
 			</a>
-			<a href="#">
+			<a href="memberslist">
 				<div>
 					<p>Список пользователей</p>
 				</div>
