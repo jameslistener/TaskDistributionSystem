@@ -251,44 +251,30 @@ body {
 	width: 100%;
 	float: left;
 }
-.name {
-	width:40%;
-	height: 80px;
-	background-color: gray;
-	display: flex;
-	float: left;
-}
+
 .person {
 	width: 100%;
-	height: 80px;
-	background-color: green;
+	height: 30px;
 	float: left;
 	display: inline;
+	border-bottom: solid 2px #AAAAAA;
 }
+.person p{
+	margin: 0;
+}
+
+.name {
+	width: 250px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
 .jobs {
-	width: 20%;
+	
 	float: left;
-	height: 80px;
-	background-color: red;
-	display: flex;
-	/*margin: 0;*/
-	margin: auto;
-}
-.name a {
-	margin: auto;
-}
-.Surname {
-	width: 40%;
-	height: 80px;
-	background-color: blue;
-	display: flex;
-	float: left;
-}
-.Surname a {
-	margin: auto;
-}
-.jobs p {
-	margin: auto;
+	height: 30px;
+	line-height: 30px;
 }
 
 .personka {

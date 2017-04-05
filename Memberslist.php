@@ -10,11 +10,8 @@
 				echo '<div class="members">';
 	echo '<div class="person">';
 		echo '<div class="name">';
-			echo '<a class="Yourname" href="#">'.$users[$k]['name'].'</a>';
+			echo '<a class="Yourname" href="#">'.$users[$k]['name'].' '.$users[$k]['surname'].'</a>';
 			echo '</div>';
-		echo '<div class="Surname">';
-			echo '<a class="Yourname" href="#">'.$users[$k]['surname'].'</a>';
-		echo '</div>';
 		echo '<div class="jobs">';
 			echo '<p>'.$users[$k]['profession'].'</p>';
 		echo '</div>';
