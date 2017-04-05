@@ -242,3 +242,97 @@ body {
 .projectname{
 
 }
+
+/**************************************************************************/
+/*FOR MEMBERSLIST AND MEMBER */
+/**************************************************************************/
+
+.members {
+	width: 100%;
+	float: left;
+}
+.name {
+	width:40%;
+	height: 80px;
+	background-color: gray;
+	display: flex;
+	float: left;
+}
+.person {
+	width: 100%;
+	height: 80px;
+	background-color: green;
+	float: left;
+	display: inline;
+}
+.jobs {
+	width: 20%;
+	float: left;
+	height: 80px;
+	background-color: red;
+	display: flex;
+	/*margin: 0;*/
+	margin: auto;
+}
+.name a {
+	margin: auto;
+}
+.Surname {
+	width: 40%;
+	height: 80px;
+	background-color: blue;
+	display: flex;
+	float: left;
+}
+.Surname a {
+	margin: auto;
+}
+.jobs p {
+	margin: auto;
+}
+
+.personka {
+	width: 100%;
+	height: 380px;
+	display: block;
+	/*background-color: red;*/
+}
+.avatar {
+	width: 20%;
+	height: 180px;
+	float: left;
+	/*background-color: yellow;*/
+}
+.textinfo {
+	width: 80%;
+	height: 180px;
+	float: left; 
+	/*background-color: orange;*/
+}
+.imechko {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: purple;*/
+}
+.status {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: red;*/
+}
+.rabotka {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: */
+}
+.aboutyou {
+	width: 100%;
+	height: 200px;
+	/*background-color: blue;*/
+}
+.topinfo {
+	width: 100%;
+	height: 180px;
+}
