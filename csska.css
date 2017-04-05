@@ -1,19 +1,18 @@
 .members {
 	width: 100%;
 	float: left;
-	background-color: orange;
 }
 .name {
 	width:40%;
 	height: 80px;
-	background-color: purple;
+	background-color: gray;
 	display: flex;
 	float: left;
 }
 .person {
 	width: 100%;
 	height: 80px;
-	background-color: orange;
+	background-color: green;
 	float: left;
 	display: inline;
 }
@@ -21,7 +20,7 @@
 	width: 20%;
 	float: left;
 	height: 80px;
-	background-color: yellow;
+	background-color: red;
 }
 .jobs{
 	display: flex;
@@ -36,7 +35,7 @@
 .Surname {
 	width: 40%;
 	height: 80px;
-	background-color: red;
+	background-color: blue;
 	display: flex;
 	float: left;
 }
