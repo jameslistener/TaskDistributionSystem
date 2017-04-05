@@ -20,12 +20,12 @@
 		</div>
 	</div>
 	<div id="leftbar">
-		<a href="#">
+		<a href="projectlist.php">
 			<div>
 				<p>Список проектов</p>
 			</div>
 		</a>
-		<a href="#">
+		<a href="memberslist.php">
 			<div>
 				<p>Список пользователей</p>
 			</div>
