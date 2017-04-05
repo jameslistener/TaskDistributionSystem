@@ -8,7 +8,7 @@
 	<body>
 		<div id="Head">
 			<div id="Logo">
-				<p id="logotip">DreamTeam</p>
+				<p id="logotip">DREAMTEAM</p>
 			</div>
 			<div id="authorization">
 				<form id="pole">
