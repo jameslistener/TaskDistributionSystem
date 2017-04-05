@@ -23,12 +23,12 @@
 					echo '</div>';
 					echo '<div class="deadline">';
 						echo $projects[$i]["killline"];
-					echo '</div>';
+					echo '</div><div class="closer"></div>';
 				echo '</div>';
 			echo '</div>';
 			echo '<div class="status">';
 				echo $projects[$i]["meaning"];
-			echo "</div>";
+			echo '</div><div class="closer"></div>';
 		echo "</div>";
 	}
 ?>
