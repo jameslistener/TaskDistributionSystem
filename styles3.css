@@ -3,61 +3,117 @@
 	border-width: 1px;
 	border-color: red;
 }*/
+
+@font-face {
+    font-family: Play;
+    src: url(fonts/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlayBold;
+    src: url(fonts/Play-Bold.ttf);
+}
+
+* {
+	font-family: Play;
+}
+
 .closer{
 	clear: both;
+}
+.align{
+	display: flex;
+}
+.palign{
+	display: inline-block;
+	margin: auto 0;
+	margin-right: 5px;
+}
+.align textarea{
+	display: inline-block;
 }
 body {
 	margin: 0;
 }
+[name="memberstask"]{
+	display: inline-block;
+}
 
 #Head {
 	width: 100%;
-	height: 63px;
-	display: fixed;
-	background-color: red;
+	height: 68px;
+	position: fixed;
+/*	background-color: red;*/
 	/*background-image: url(back.jpg);*/
+	top: 0;
+	left: 0;
+	z-index: 10;
+	border-bottom: solid 2px #AAAAAA;
 }
 
 #Logo {
 	width: 69%; 
 	height: 68px;
 	float: left;
-	display: fixed;
-	background-color: yellow;
+	position: fixed;
+	background-color: white;
+	line-height: 68px;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	z-index: 10;
 }
 
 #authorization {
 	width: 31%;
 	height: 68px;
 	float: left;
-	background-color: blue;
+	position: fixed;
+	background-color: white;
+	display: inline-block;
+	left: 931px;
+	z-index: 10;
+	border-left: solid 2px #AAAAAA;
 }
 
 #leftbar {
-	width: 18%;
-	height: 500px;
-	display: fixed;
+	width: 17%;
+	height: 592px;
+	position: fixed;
 	float: left;
-	background-color: green;
+	top: 70px;
+	left: 0;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #AAAAAA;
+	z-index: 10;
+	/*border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #AAAAAA;*/
+/*	background-color: green;*/
 }
 
 #logotip {
 	margin: 0;
 	vertical-align: middle;
 	text-align: center;
+	font-family: PlayBold; 
+	font-size: 26pt;
 }
 
 #maininfo {
 	float: left;
-	width: 82%;
+	width: 83%;
 	height: 500px;
 	/*background-color: pink;*/
-	display: absolute;
+	position: absolute;
+	top: 69px;
+	left: 232px;
 }
 
 
 #leftbar a div{
-	border-top: 3px solid black;
+	border-bottom: 2px solid #999;
 	width: 100%;
 	height: 70px;
 	background-color: white;
@@ -66,7 +122,7 @@ body {
 }
 
 #leftbar a:hover div{
-	background-color: yellow;
+	background-color: #DDDDDD;
 }
 
 #leftbar a{
@@ -84,7 +140,13 @@ body {
 	vertical-align: middle;
 	margin: auto;
 }
-
+#maininfo form{
+	padding-top: 10px;
+	padding-left: 20px;
+}
+#maininfo form input, #maininfo form select, #maininfo form textarea{
+	margin-bottom: 5px;
+}
 #projectview{
 	width: 95%;
 	min-height: 90px;
@@ -144,9 +206,10 @@ body {
 	width: 100%;
 	height: 40px;
 /*	background-color: green;*/
+	border-bottom: solid 2px #AAAAAA;
 }
 .project{
-
+	border-bottom: solid 2px #AAAAAA;
 }
 .leftbar_of_project{
 	float: left;
@@ -196,4 +259,84 @@ body {
 }
 .projectname{
 
+}
+
+/**************************************************************************/
+/*FOR MEMBERSLIST AND MEMBER */
+/**************************************************************************/
+
+.members {
+	width: 100%;
+	float: left;
+}
+
+.person {
+	width: 100%;
+	height: 30px;
+	float: left;
+	display: inline;
+	border-bottom: solid 2px #AAAAAA;
+}
+.person p{
+	margin: 0;
+}
+
+.name {
+	width: 250px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
+.jobs {
+	
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.personka {
+	width: 100%;
+	height: 380px;
+	display: block;
+	/*background-color: red;*/
+}
+.avatar {
+	width: 20%;
+	height: 180px;
+	float: left;
+	/*background-color: yellow;*/
+}
+.textinfo {
+	width: 80%;
+	height: 180px;
+	float: left; 
+	/*background-color: orange;*/
+}
+.imechko {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: purple;*/
+}
+.member_status {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: red;*/
+}
+.rabotka {
+	width: 100%;
+	height: 60px;
+	float: left;
+	/*background-color: */
+}
+.aboutyou {
+	width: 100%;
+	height: 200px;
+	/*background-color: blue;*/
+}
+.topinfo {
+	width: 100%;
+	height: 180px;
 }
