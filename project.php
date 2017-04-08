@@ -24,14 +24,14 @@
 	echo '<div class="closer"></div>';
 	echo '</div> ';
 	echo'<div  class="tasks">';
-	$resulttask = mysql_query('SELECT * FROM bind_tasks_projects AS tp JOIN tasks WHERE tp.id_projects='.$project_id.' and  tp.id_tasks=task_id') or die('Error '.mysql_error());
+	$resulttask = mysql_query('SELECT * FROM bind_tasks_projects, users JOIN tasks WHERE bind_tasks_projects.id_projects='.$project_id.' and  bind_tasks_projects.id_tasks=task_id and users.user_id=tasks.Chief ') or die('Error '.mysql_error());
 	for($tasks=array();$task=mysql_fetch_assoc($resulttask); $tasks[]=$task);
 	for ($k=0;$k<count($tasks);$k++)
 	{
 	echo'<div class="task">';
-		echo'<div class="projectname"><a href="#">'.$tasks[$k]['main_name'].'</a></div>';
+		echo'<div class="projectname"><a href="projecttask.php?task_id='.$tasks[$k]['id_tasks'].'">'.$tasks[$k]['main_name'].'</a></div>';
 		echo'<div class="project_footer">';
-		echo'<div class="chief"><a href="#">'.$tasks[$k]['Chief'].'</a></div>';
+		echo'<div class="chief"><a href="#">'.$tasks[$k]['name'].' '.$tasks[$k]['surname'].'</a></div>';
 		echo'<div class="deadline">'.$tasks[$k]['deadline'].'</div>';
 		echo'</div>';
 	echo'</div>';
