@@ -37,7 +37,7 @@
 									$taskid=$_GET['task_id'];
 									mysql_connect('localhost','root','') or die('Error '.mysql_error());
 									mysql_select_db('katya_mosin_dasha') or die('Error '.mysql_error());
-									$result = mysql_query('SELECT users.profession,users.user_id, users.name,users.surname,tasks.task_id, tasks.main_name, tasks.description, tasks.chief, tasks.deadline,tasks.status FROM users JOIN tasks WHERE tasks.task_id="'.$taskid.'" AND tasks.chief=users.user_id ') or die('Error '.mysql_error());
+									$result = mysql_query('SELECT users.profession,users.user_id, users.name,users.surname,tasks.task_id, tasks.main_name, tasks.description, tasks.chief, tasks.deadline,tasks.status, bind_users_tasks.id_users, bind_users_tasks.id_tasks FROM users JOIN tasks JOIN bind_users_tasks WHERE tasks.task_id="'.$taskid.'" AND tasks.chief=users.user_id AND bind_users_tasks.id_users=users.user_id') or die('Error '.mysql_error());
 									$task=mysql_fetch_assoc($result);
 									echo '<div class= "projectname">'.$task['main_name'].'</div>';
 									echo '<div class="description">'.$task['description'].'</div>';
@@ -51,6 +51,10 @@
 									echo '<div class="closer"></div>';
 									echo "</div>";
 									echo '<div  class="tasks">';
+									echo "<div class='onemember'>";
+									echo '<span><a href="#">'.$task['name'].'</a></span>';
+									echo '<span>'.$task['profession'].'</span>';
+									echo "</div>";
 									echo "</div>";
 									echo "</div>";
 									echo "</div>";
